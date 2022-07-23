@@ -20,7 +20,7 @@
     />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body>
+  <body data-page>
     <header class="header">
       <div class="container header-container">
         <nav class="nav">
@@ -59,7 +59,7 @@
       <section class="section hero">
         <div class="container">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-          <button class="hero-btn" type="button">Заказать услугу</button>
+          <button class="hero-btn" type="button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
       <section class="section feature">
@@ -437,11 +437,11 @@
       </div>
     </footer>
     <!-- modal window -->
-    <div class="backdrop">
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="modal-btn">
-          <svg class="modal-btn-icon" width="" height="">
-            <use href=""></use>
+        <button class="modal-btn" type="button" data-modal-close>
+          <svg class="modal-btn-icon" width="18" height="18">
+            <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
       </div>
